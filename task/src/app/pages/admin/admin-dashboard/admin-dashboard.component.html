@@ -1,0 +1,14 @@
+<div class="container">
+    <header class="header">
+        <h2>Admin</h2>
+        <div class="headings-container">
+            <a class='side-headings' routerLink="courses" routerLinkActive="active">Courses</a>
+            <a class='side-headings' routerLink="users" routerLinkActive="active">Users</a>
+        </div>
+        <button (click)="Logout()">logout</button>
+    </header>
+
+    <div class="navigateSection">
+        <router-outlet></router-outlet>
+    </div>
+</div>

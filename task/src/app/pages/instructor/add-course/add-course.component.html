@@ -1,0 +1,32 @@
+<!-- <div class="container">
+    <form [formGroup]="addCourse" (ngSubmit)="onSubmit()" class="add-corse-form">
+        <input type="text" placeholder="course name" formControlName="courseName">
+        <input type="text" placeholder="duration" formControlName="duration">
+        <button type="submit">add</button>
+    </form>
+</div> -->
+
+<div class="container">
+  <form [formGroup]="addCourse" (ngSubmit)="onSubmit()" class="add-course-form" mat-elevation-z8>
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label>Course Name *</mat-label>
+      <input matInput placeholder="Course name" formControlName="courseName" required>
+      <mat-icon matSuffix>book</mat-icon>
+      <mat-error *ngIf="addCourse.get('courseName').invalid && addCourse.get('courseName').touched">
+        Course name is required
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label>Duration *</mat-label>
+      <input matInput placeholder="Duration" formControlName="duration" required>
+      <mat-icon matSuffix>schedule</mat-icon>
+      <mat-error *ngIf="addCourse.get('duration').invalid && addCourse.get('duration').touched">
+        Duration is required
+      </mat-error>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit" [disabled]="addCourse.invalid">Add</button>
+
+  </form>
+</div>

@@ -1,0 +1,103 @@
+// .container{
+//     min-height: 100vh;
+// }
+
+// .header{
+//     display: flex;
+//     justify-content: space-around;
+//     border-bottom: thin solid;
+// }
+
+// .headings-container{
+//     flex: 2;
+//     display: flex;
+// }
+
+// .card{
+//     border: thin solid;
+//     padding: 1rem;
+// }
+
+// .navigate-section{
+//     display: flex;
+//     flex-direction: column;
+//     gap: 1rem;
+// }
+
+// .active{
+//     padding: 1rem;
+//     background-color: rgb(185, 185, 244);
+// }
+
+
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5f8ff;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background-color: #283593;
+  color: white;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar-title {
+  margin: 0 0 2rem 0;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.sidebar-btn {
+  width: 100%;
+  font-weight: 600;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-title {
+  color: #1a237e;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Course cards grid */
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.8rem;
+}
+
+.course-card {
+  background-color: #e8eaf6;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  padding: 1rem;
+}
+
+mat-card-title {
+  font-weight: 700;
+  color: #303f9f;
+  margin-bottom: 0.5rem;
+}
+
+mat-card-content p {
+  margin: 0;
+  color: #3f51b5;
+  font-size: 1rem;
+}

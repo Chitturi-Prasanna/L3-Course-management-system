@@ -1,0 +1,24 @@
+<!-- <div class="container">
+        @for(user of allUsers();track user.id){
+        <div class="card">
+            <p>user: {{user.id}}</p>
+            <p>email: {{user.email}}</p>
+            <p>role:{{user.role}}</p>
+        </div>
+        }
+
+</div> -->
+
+
+<div class="container">
+  @for (user of allUsers(); track user.id) {
+    <mat-card class="user-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-jbQ3OY7CK_dYtUifWhOcFb13bEPRIcy2kQ&s" alt="">
+      <mat-card-title>User ID: {{ user.id }}</mat-card-title>
+      <mat-card-content>
+        <p><strong>Email:</strong> {{ user.email }}</p>
+        <p><strong>Role:</strong> {{ user.role }}</p>
+      </mat-card-content>
+    </mat-card>
+  }
+</div>

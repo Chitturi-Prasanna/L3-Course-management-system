@@ -1,0 +1,99 @@
+// .container{
+//     min-height: 100vh;
+// }
+
+// .header{
+//     display: flex;
+//     justify-content: space-around;
+//     border-bottom: thin solid;
+// }
+
+// .headings-container{
+//     flex: 2;
+//     display: flex;
+// }
+
+// .side-headings{
+//     padding: 1rem;
+//     &:hover{
+//         background-color: rgb(185, 185, 244);
+//     }
+//     &:active{
+//         background-color: rgb(185, 185, 244);
+//     }
+// }
+
+// .navigateSection{
+//     flex:7
+// }
+
+// .active{
+//     padding: 1rem;
+//     background-color: rgb(185, 185, 244);
+// }
+
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5faff; // light background for app consistency
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1976d2; // Material blue
+  padding: 1rem 2rem;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.headings-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.side-headings {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #1565c0; // darker blue on hover
+  }
+
+  &:active {
+    background-color: #0d47a1;
+  }
+}
+
+.active {
+  background-color: #1565c0;
+}
+
+button {
+  background-color: #ffffff;
+  color: #1976d2;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #e3f2fd;
+  }
+}
+
+.navigateSection {
+  flex: 1;
+  padding: 2rem;
+}

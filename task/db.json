@@ -1,0 +1,99 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    },
+    {
+      "id": "3",
+      "title": "a title three",
+      "views": 200
+    },
+    {
+      "id": "3",
+      "title": "a title three",
+      "views": 200
+    },
+    {
+      "id": "3",
+      "title": "a title three",
+      "views": 200
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [
+    {
+      "id": "1",
+      "email": "student",
+      "password": "student",
+      "role": "student"
+    },
+    {
+      "id": "2",
+      "email": "admin",
+      "password": "admin",
+      "role": "admin"
+    },
+    {
+      "id": "3",
+      "email": "instructor",
+      "password": "instructor",
+      "role": "instructor"
+    },
+    {
+      "id": "d8ad",
+      "email": "admin",
+      "password": "admin"
+    },
+    {
+      "id": "f210",
+      "email": "admin",
+      "password": "admin"
+    },
+    {
+      "id": "cb35",
+      "email": "admin",
+      "password": "admin"
+    }
+  ],
+  "courses": [
+    {
+      "courseId": "100",
+      "courseName": "angular",
+      "instructorName": "instructor",
+      "duration": "2 months"
+    },
+    {
+      "courseId": "101",
+      "courseName": "react",
+      "instructorName": "instructor",
+      "duration": "3 months"
+    },
+    {
+      "courseId": "102",
+      "courseName": "node",
+      "instructorName": "instructor",
+      "duration": "2 months"
+    }
+  ]
+}

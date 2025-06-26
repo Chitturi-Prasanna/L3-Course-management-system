@@ -1,0 +1,42 @@
+<!-- <div class="container">
+    <form [formGroup]="loginForm" id="login-form">
+        <input type="text" placeholder="email" formControlName="email">
+        <input type="text" placeholder="password" formControlName="password" type="password">
+        <input type="text" placeholder="role" formControlName="role">
+        <p class="error">{{validate()}}</p>
+        <button (click)="loginClick()">Login</button>
+        <button (click)="onRegister()">Register</button>
+    </form>
+</div> -->
+
+
+<div class="container">
+  <form [formGroup]="loginForm" id="login-form">
+    <mat-card class="form-card">
+      <mat-card-title>Login</mat-card-title>
+
+      <mat-form-field appearance="fill" class="full-width" color="primary">
+        <mat-label>Email <span class="required-star">*</span></mat-label>
+        <input matInput type="text" placeholder="Email" formControlName="email" required>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="full-width" color="primary">
+        <mat-label>Password <span class="required-star">*</span></mat-label>
+        <input matInput type="password" placeholder="Password" formControlName="password" required>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="full-width" color="accent">
+        <mat-label>Role</mat-label>
+        <input matInput type="text" placeholder="Role" formControlName="role">
+      </mat-form-field>
+
+      <p class="error">{{ validate() }}</p>
+
+      <div class="button-group">
+        <button mat-raised-button color="primary" (click)="loginClick()" [disabled]="!loginForm.get('email')?.value || !loginForm.get('password')?.value">Login</button>
+        <button mat-stroked-button color="accent" (click)="onRegister()" [disabled]="!loginForm.get('email')?.value || !loginForm.get('password')?.value">Register</button>
+      </div>
+    </mat-card>
+  </form>
+</div>
+

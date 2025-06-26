@@ -1,0 +1,87 @@
+// .container{
+//     min-height: 100vh;
+// }
+
+// .header{
+//     display: flex;
+//     justify-content: space-around;
+//     border-bottom: thin solid;
+// }
+
+// .headings-container{
+//     flex: 2;
+//     display: flex;
+// }
+
+// .side-headings{
+//     padding: 1rem;
+//     &:hover{
+//         background-color: rgb(185, 185, 244);
+//     }
+//     &:active{
+//         background-color: rgb(185, 185, 244);
+//     }
+// }
+
+// .navigate-section{
+//     flex:7
+// }
+
+// .active{
+//     padding: 1rem;
+//     background-color: rgb(185, 185, 244);
+// }
+
+
+.container {
+  min-height: 100vh;
+  background-color: #f5faff;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #42a5f5; // Student-friendly blue
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.headings-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.side-headings {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.active {
+  background-color: #ffffff;
+  color: #1565c0;
+  font-weight: bold;
+}
+
+button {
+  font-weight: 500;
+}

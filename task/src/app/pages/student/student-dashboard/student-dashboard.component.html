@@ -1,0 +1,32 @@
+<!-- <p>student-dashboard works!</p>
+<div class="container">
+    <header class="header">
+        <h2>Student</h2>
+        <div class="headings-container">
+            <a class='side-headings' routerLink="course" routerLinkActive="active">Courses</a>
+            <a class='side-headings' routerLink="myCourses" routerLinkActive="active">myCourses</a>
+        </div>
+        <button (click)="Logout()">logout</button>
+    </header>
+
+    <div class="navigate-section">
+        <router-outlet></router-outlet>
+    </div>
+</div> -->
+
+
+<div class="container">
+  <header class="header mat-elevation-z4">
+    <h2 class="title">Student</h2>
+    <div class="headings-container">
+      <a class="side-headings" routerLink="course" routerLinkActive="active">Courses</a>
+      <a class="side-headings" routerLink="myCourses" routerLinkActive="active">My Courses</a>
+    </div>
+    <button mat-raised-button color="warn" (click)="Logout()">Logout</button>
+  </header>
+
+  <div class="navigate-section">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
